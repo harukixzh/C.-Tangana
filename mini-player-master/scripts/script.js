@@ -1,3 +1,10 @@
+/*
+design by Voicu Apostol.
+design: https://dribbble.com/shots/3533847-Mini-Music-Player
+I can't find any open music api or mp3 api so i have to download all musics as mp3 file.
+You can fork on github: https://github.com/muhammederdem/mini-player
+*/
+
 new Vue({
   el: "#app",
   data() {
@@ -10,74 +17,74 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
-          name: "Mekanın Sahibi",
-          artist: "Norm Ender",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/1.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/1.mp3",
-          url: "https://www.youtube.com/watch?v=z3wAjJXbYzA",
-          favorited: false
-        },
-        {
-          name: "Everybody Knows",
-          artist: "Leonard Cohen",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/2.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/2.mp3",
-          url: "https://www.youtube.com/watch?v=Lin-a2lTelg",
+          name: "Demasiadas Mujeres",
+          artist: "C. Tangana",
+          cover: "https://aws.traveler.es/prod/designs/v1/assets/290x290/203216.jpg",
+         
+          url: "https://www.youtube.com/watch?v=ZlFri4ez_lE",
           favorited: true
         },
         {
-          name: "Extreme Ways",
-          artist: "Moby",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/3.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/3.mp3",
-          url: "https://www.youtube.com/watch?v=ICjyAe9S54c",
-          favorited: false
-        },
-        {
-          name: "Butterflies",
-          artist: "Sia",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/4.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/4.mp3",
-          url: "https://www.youtube.com/watch?v=kYgGwWYOd9Y",
-          favorited: false
-        },
-        {
-          name: "The Final Victory",
-          artist: "Haggard",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/5.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/5.mp3",
-          url: "https://www.youtube.com/watch?v=0WlpALnQdN8",
+          name: "Tú Me Dejaste De Querer",
+          artist: "C. Tangana",
+          cover: "https://aws.traveler.es/prod/designs/v1/assets/290x290/203216.jpg",
+  
+          url: "https://www.youtube.com/watch?v=ltmO9XQVdSg",
           favorited: true
         },
         {
-          name: "Genius ft. Sia, Diplo, Labrinth",
-          artist: "LSD",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/6.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/6.mp3",
-          url: "https://www.youtube.com/watch?v=HhoATZ1Imtw",
-          favorited: false
+          name: "Comerte Entera",
+          artist: "C. Tangana",
+          cover: "https://aws.traveler.es/prod/designs/v1/assets/290x290/203216.jpg",
+
+          url: "https://www.youtube.com/watch?v=3xlExHPyqM0",
+          favorited: true
         },
         {
-          name: "The Comeback Kid",
-          artist: "Lindi Ortega",
+          name: "Nunca Estoy",
+          artist: "C. Tangana",
+          cover: "https://aws.traveler.es/prod/designs/v1/assets/290x290/203216.jpg",
+
+          url: "https://www.youtube.com/watch?v=U6phuhL1YbY",
+          favorited: true
+        },
+        {
+          name: "Párteme La Cara",
+          artist: "C. Tangana",
+          cover: "https://aws.traveler.es/prod/designs/v1/assets/290x290/203216.jpg",
+
+          url: "https://www.youtube.com/watch?v=gcS2H3p-YOg",
+          favorited: true
+        },
+        {
+          name: "Ingobernable",
+          artist: "C.Tangana",
+          cover: "https://aws.traveler.es/prod/designs/v1/assets/290x290/203216.jpg",
+
+          url: "https://www.youtube.com/watch?v=uV0r4a2QVkQ",
+          favorited: true
+        },
+        {
+          name: "Nominao",
+          artist: "C. Tangana",
           cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/7.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/7.mp3",
-          url: "https://www.youtube.com/watch?v=me6aoX0wCV8",
+
+          url: "https://www.youtube.com/watch?v=wAZZ9Xe3HKA",
           favorited: true
         },
         {
-          name: "Overdose",
-          artist: "Grandson",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/8.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/8.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
-          favorited: false
+          name: "Un Veneno - G-Mix",
+          artist: "C. Tangana",
+          cover: "https://aws.traveler.es/prod/designs/v1/assets/290x290/203216.jpg",
+
+          url: "https://www.youtube.com/watch?v=h0Tb9VtVzVE",
+          favorited: true
         },
         {
           name: "Rag'n'Bone Man",
           artist: "Human",
-          cover: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/img/9.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/9.mp3",
+          cover: "https://aws.traveler.es/prod/designs/v1/assets/290x290/203216.jpg",
+
           url: "https://www.youtube.com/watch?v=L3wKzyIN1yk",
           favorited: false
         }
@@ -97,29 +104,7 @@ new Vue({
         this.isTimerPlaying = false;
       }
     },
-    generateTime() {
-      let width = (100 / this.audio.duration) * this.audio.currentTime;
-      this.barWidth = width + "%";
-      this.circleLeft = width + "%";
-      let durmin = Math.floor(this.audio.duration / 60);
-      let dursec = Math.floor(this.audio.duration - durmin * 60);
-      let curmin = Math.floor(this.audio.currentTime / 60);
-      let cursec = Math.floor(this.audio.currentTime - curmin * 60);
-      if (durmin < 10) {
-        durmin = "0" + durmin;
-      }
-      if (dursec < 10) {
-        dursec = "0" + dursec;
-      }
-      if (curmin < 10) {
-        curmin = "0" + curmin;
-      }
-      if (cursec < 10) {
-        cursec = "0" + cursec;
-      }
-      this.duration = durmin + ":" + dursec;
-      this.currentTime = curmin + ":" + cursec;
-    },
+    
     updateBar(x) {
       let progress = this.$refs.progress;
       let maxduration = this.audio.duration;
